@@ -5,7 +5,8 @@ for authoring KeenAgents flows, with Connect → Upload deployment and the flow 
 
 | Build | For |
 |---|---|
-| `shira-flow-builder-vs-0.0.7.vsix` | Keen 15.3 servers (current): Upload and auto-sync send only `flows/`, `scripts/` and `keen-tools.json` (never a `.env`, `node_modules` or notes) and pause while the project has errors; the Problems panel shows what the platform's deploy would refuse; the debuggers' sign-in says the platform's real reason; the node forms always show and save the current data; an invalid `.flow` opens as an error instead of an empty canvas; the LLM model list matches the platform |
+| `shira-flow-builder-vs-0.0.8.vsix` | Keen 15.3 servers (current): nine new models in the LLM and Summarizer menus — Claude Opus 5.5, Fable 5.1, Fable 5.2, Sonnet 5.5 and Haiku 5.5 (Effort `low` … `max`), GPT-6.2 Astra and Sol (Reasoning Effort `low` … `xhigh`), GPT-6.1 Terra and GPT-6 Luna (`none` … `xhigh`); they show Max Tokens and their effort, no Temperature / Top p (these models refuse them); Claude Opus 4.7 no longer shows Temperature / Top p |
+| `shira-flow-builder-vs-0.0.7.vsix` | Keen 15.3 servers: Upload and auto-sync send only `flows/`, `scripts/` and `keen-tools.json` (never a `.env`, `node_modules` or notes) and pause while the project has errors; the Problems panel shows what the platform's deploy would refuse; the debuggers' sign-in says the platform's real reason; the node forms always show and save the current data; an invalid `.flow` opens as an error instead of an empty canvas; the LLM model list matches the platform |
 | `shira-flow-builder-vs-0.0.6.vsix` | Keen 15.3 servers: the Summarizer node, two-step sign-in for the debuggers |
 | `shira-flow-builder-vs-0.0.4.vsix` | Keen 15.3 servers, accounts without two-step sign-in only |
 | `shira-flow-builder-vs-0.0.2.vsix` | servers before Keen 15.3 |
@@ -13,7 +14,7 @@ for authoring KeenAgents flows, with Connect → Upload deployment and the flow 
 Install a build from the command line:
 
 ```bash
-code --install-extension shira-flow-builder-vs-0.0.7.vsix
+code --install-extension shira-flow-builder-vs-0.0.8.vsix
 ```
 
 or in VS Code: Extensions → `…` menu → **Install from VSIX…**.
